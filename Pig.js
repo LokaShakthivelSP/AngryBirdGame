@@ -21,11 +21,11 @@ class Pig extends BaseClass {
   }
 
   score(){
-    if (this.Visiblity < 0 && this.Visiblity > -1005){
+    if (this.Visiblity < 0 && this.Visiblity > -255){
       score++;
     }
+    if (this.Visiblity < 0 && this.Visiblity > -50){
+      pigSnort.play();
+    }
   }
-
-
-
 };
