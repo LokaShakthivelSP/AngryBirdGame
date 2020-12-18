@@ -66,9 +66,7 @@ function draw(){
         textAlign(CENTER);
         text("Score  " + score,900, 50);
         text("Destroy the pigs",600,70);
-        textSize(20);
-        fill("black");
-        text("Press SPACE for next Bird",600,120);
+        
     
     Engine.update(engine);
     //strokeWeight(4);
@@ -111,6 +109,9 @@ function draw(){
     if(displayHeight<displayWidth){
         bird2.display();
         bird3.display();
+        textSize(20);
+        fill("black");
+        text("Press SPACE for next Bird, if not in Mobile",600,120);
     }
 
     platform.display();
