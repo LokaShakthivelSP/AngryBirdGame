@@ -108,8 +108,10 @@ function draw(){
     log1.score();
 
     bird.display();
-    bird2.display();
-    bird3.display();
+    if(displayHeight<displayWidth){
+        bird2.display();
+        bird3.display();
+    }
 
     platform.display();
     //log6.display();
